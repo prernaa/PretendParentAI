@@ -69,13 +69,13 @@ Each system was scored on:
 |              | winner\_helpfulness | winner\_empathy\_tone | winner\_creativity | winner\_clarity | winner\_relatability | winner\_adoptability | winner\_overall |
 |--------------|---------------------|-----------------------|--------------------|-----------------|----------------------|----------------------|-----------------|
 | **System A** | **0.90**            | 0.30                  | 0.47               | **0.90**        | 0.02                 | **0.72**             | **0.72**        |
-| **System B** | 0.10                | **0.70**              | **0.48*            | 0.10            | **0.98**             | 0.28                 | 0.28            |
+| **System B** | 0.10                | **0.70**              | **0.48**            | 0.10            | **0.98**             | 0.28                 | 0.28            |
 | **Tie**      | 0.00                | 0.00                  | 0.05               | 0.00            | 0.00                 | 0.00                 | 0.00            |
 
 **Interpretation**
 - **System A (Mistral)** remains more *helpful*, *clear*, and *adoptable*.  
-- **System B (PretendParentAI)** excels in *empathy* and *relatability*.  
-- While System A’s responses are helpful 90% of the time, their **adoptability is 72%**—showing that users sometimes prefer System B due to emotional tone and resonance.
+- **System B (PretendParentAI)** excels in *empathy* and *relatability*, and is slightly more *creative*.  
+- While System A’s responses are helpful 90% of the time, their adoptability is 72% — showing that *users sometimes prefer System B due to emotional tone and resonance, despite lower clarity*.
 
 ---
 
