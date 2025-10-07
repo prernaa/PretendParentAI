@@ -8,7 +8,7 @@ The goal was to explore whether instruction tuning on real-world parenting discu
 ## Instruction Tuning (PretendParentAI)
 
 **Base Model:** `mistralai/Mistral-7B-Instruct-v0.3`  
-**Fine-tuning Method:** QLoRA (Quantized Low-Rank Adaptation)  
+**Fine-tuning Method:** SFT and PEFT with QLoRA (Quantized Low-Rank Adaptation)  
 **Compute:** Google Colab A100 (4 hours for 38.4K samples; estimated 112 hrs on T4)  
 **Training Samples:** 38,400  
 **Validation Samples:** 7,781  
