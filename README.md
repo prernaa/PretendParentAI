@@ -66,26 +66,24 @@ Evaluation used **GPT-4o** as an LLM judge to compare responses from:
 Each system was scored on:  
 *helpfulness, empathy/tone, creativity, clarity, relatability, adoptability, and overall preference.*
 
-| | winner_adoptability | winner_empathy | winner_clarity | winner_comprehensiveness | winner_practical | winner_overall |
-|--|---------------------|----------------|----------------|--------------------------|------------------|----------------|
-| **System A** | 0.7259 | 0.1066 | 0.8883 | 0.7081 | 0.8401 | 0.7462 |
-| **System B** | 0.2741 | **0.7640** | 0.1117 | 0.2767 | 0.1574 | 0.2538 |
-| **Tie** | 0.0000 | 0.1294 | 0.0000 | 0.0152 | 0.0025 | 0.0000 |
-
-> ![LLM-as-a-Judge Results](v1_empathy_focussed.png)
+|              | winner\_helpfulness | winner\_empathy\_tone | winner\_creativity | winner\_clarity | winner\_relatability | winner\_adoptability | winner\_overall |
+|--------------|---------------------|-----------------------|--------------------|-----------------|----------------------|----------------------|-----------------|
+| **System A** | **0.90**            | 0.30                  | 0.47               | **0.90**        | 0.02                 | **0.72**             | **0.72**        |
+| **System B** | 0.10                | **0.70**              | **0.48*            | 0.10            | **0.98**             | 0.28                 | 0.28            |
+| **Tie**      | 0.00                | 0.00                  | 0.05               | 0.00            | 0.00                 | 0.00                 | 0.00            |
 
 **Interpretation**
-- **System A (Mistral)** remains more *helpful*, *clear*, and *practical*.  
-- **System B (PretendParentAI)** excels in *empathy*, *warmth*, and *relatability*.  
-- Despite lower clarity, users sometimes prefer B’s advice due to emotional tone and resonance.
+- **System A (Mistral)** remains more *helpful*, *clear*, and *adoptable*.  
+- **System B (PretendParentAI)** excels in *empathy* and *relatability*.  
+- While System A’s responses are helpful 90% of the time, their **adoptability is 72%**—showing that users sometimes prefer System B due to emotional tone and resonance.
 
 ---
 
 ## Key Learnings
 1. Fine-tuning on Reddit data increases empathy and warmth but decreases clarity and factual helpfulness.  
 2. Reddit’s casual, noisy, non-evidence-based writing style limits instruction-tuning quality.  
-3. Empathy and relatability can improve **adoptability** even if clarity declines.  
-4. Future approaches should combine instruction tuning with **preference optimization** (e.g., DPO).
+3. More empathetic and relatable advice can increase **adoptability** even if clarity declines.  
+4. Future approaches should explore **preference optimization** (e.g., DPO) as a way to increase empathy and relatability in responses while maintaining clarity. 
 
 ---
 
@@ -108,11 +106,11 @@ Each system was scored on:
 
 ## Repository Structure
 instruction_tuning_qlora/
-├── Dataset_Curation_For_Mistral.ipynb
-├── Instruction_Tuning_Mistral_7B_Instruct.ipynb
-├── Instruction_Tuning_Evaluation.ipynb
-├── GPT_Generate_Test_Reddit_Samples.ipynb
-├── GPT_as_a_Judge.ipynb
+├── 1_Dataset_Curation_For_Mistral.ipynb
+├── 2_Instruction_Tuning_Mistral_7B_Instruct.ipynb
+├── 3_and_5_Instruction_Tuning_Evaluation.ipynb
+├── 4_GPT_Generate_Test_Reddit_Samples.ipynb
+├── 6_GPT_as_a_Judge.ipynb
 data_to_share/
 ├── reddit_gpt_test_samples.jsonl
 ├── reddit_gpt_test_samples_base_response.jsonl
