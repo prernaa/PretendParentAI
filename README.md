@@ -105,6 +105,7 @@ Each system was scored on:
 ---
 
 ## Repository Structure
+```plaintext
 instruction_tuning_qlora/
 ├── 1_Dataset_Curation_For_Mistral.ipynb
 ├── 2_Instruction_Tuning_Mistral_7B_Instruct.ipynb
@@ -116,7 +117,7 @@ data_to_share/
 ├── reddit_gpt_test_samples_base_response.jsonl
 ├── reddit_gpt_test_samples_ft_response.jsonl
 └── pretendparentai_gpt_as_judge_output.csv
-
+```
 ---
 
 ## Citation
