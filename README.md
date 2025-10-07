@@ -55,9 +55,7 @@ The goal was to explore whether instruction tuning on real-world parenting discu
 
 > ROUGE and BERTScore show marginal improvement; BLEU remains low (expected for open-ended tasks).
 
----
-
-## LLM-as-a-Judge Evaluation
+### LLM-as-a-Judge Evaluation
 
 Evaluation used **GPT-4o** as an LLM judge to compare responses from:
 - **System A:** Mistral Instruct v0.3 (base)
