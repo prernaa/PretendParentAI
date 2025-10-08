@@ -121,10 +121,12 @@ data_to_share/
 ## Citation
 If you use this work or methodology, please cite as:
 ```plaintext
-@misc{chikersal2025pretendparentai,
+@misc{chikersal2025parentpalai,
 author = {Prerna Chikersal},
-title = {PretendParentAI: Instruction Fine-Tuning Mistral-7B on Reddit Parenting Data using QLoRA},
+title = {PretendParentAI – Instruction Fine-Tuning Mistral-7B on Reddit Parenting Data using QLoRA},
 year = {2025},
-note = {GitHub repository}
+publisher = {GitHub},
+howpublished = {\url{https://github.com/prernaa/PretendParentAI}},
+note = {Hugging Face Model: https://huggingface.co/prernac1/pretendparentai}
 }
 ```
