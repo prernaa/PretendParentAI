@@ -29,8 +29,6 @@ The goal was to explore whether instruction tuning on real-world parenting discu
 > Validation loss began increasing in epoch 2, indicating overfitting.  
 > **Best model:** `checkpoint-1600` (after 1 epoch).
 
----
-
 ## Evaluation
 
 ### Quantitative Metrics
@@ -53,7 +51,7 @@ The goal was to explore whether instruction tuning on real-world parenting discu
 | Mistral Instruct v0.3 | 0.8334 | 0.8440 | 0.8386 |
 | PretendParentAI | 0.8323 | 0.8462 | **0.8391** |
 
-> ROUGE and BERTScore show marginal improvement; BLEU remains low (expected for open-ended tasks).
+ROUGE and BERTScore show marginal improvement; BLEU remains low (expected for open-ended tasks).
 
 ### LLM-as-a-Judge Evaluation
 
@@ -75,7 +73,6 @@ Each system was scored on:
 - **System B (PretendParentAI)** excels in *empathy* and *relatability*, and is slightly more *creative*.  
 - While System A’s responses are helpful 90% of the time, their adoptability is 72% — showing that *users sometimes prefer System B due to emotional tone and resonance, despite lower clarity*.
 
----
 
 ## Key Learnings
 1. Fine-tuning on Reddit data increases empathy and warmth but decreases clarity and factual helpfulness.  
@@ -83,7 +80,6 @@ Each system was scored on:
 3. More empathetic and relatable advice can increase **adoptability** even if clarity declines.  
 4. Future approaches should explore **preference optimization** (e.g., DPO) as a way to increase empathy and relatability in responses while maintaining clarity. 
 
----
 
 ## Next Steps
 - Apply **Direct Preference Optimization (DPO)** to balance empathy and clarity.  
@@ -91,7 +87,6 @@ Each system was scored on:
 - Continue using **Mistral Instruct v0.3** as base model with PEFT.  
 - Develop **multi-objective alignment** to jointly optimize empathy and factual quality.
 
----
 
 ## Datasets
 - **Training Data:** Reddit parenting posts (not publicly shared; contact author for details).  
@@ -100,7 +95,6 @@ Each system was scored on:
 - **Fine-Tuned Model Responses:** `data_to_share/reddit_gpt_test_samples_ft_response.jsonl`  
 - **LLM-as-a-Judge Results:** `data_to_share/pretendparentai_gpt_as_judge_output.csv`
 
----
 
 ## Repository Structure
 ```plaintext
@@ -116,7 +110,10 @@ data_to_share/
 ├── reddit_gpt_test_samples_ft_response.jsonl
 └── pretendparentai_gpt_as_judge_output.csv
 ```
----
+
+## Hugging Face Model Card
+
+https://huggingface.co/prernac1/pretendparentai
 
 ## Citation
 If you use this work or methodology, please cite as:
