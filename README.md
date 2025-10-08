@@ -1,5 +1,4 @@
-# PretendParentAI
-PretendParentAI — Relatable, Story-Driven Dialogue Generation using Instruction Fine-Tuning (SFT) with PEFT (QLoRA)
+# PretendParentAI — Relatable, Story-Driven Dialogue Generation using Instruction Fine-Tuning (SFT) with PEFT (QLoRA)
 
 ## Overview
 **PretendParentAI** fine-tunes **Mistral Instruct v0.3** on Reddit parenting data using **Quantized Low-Rank Adaptation (QLoRA)**.  
