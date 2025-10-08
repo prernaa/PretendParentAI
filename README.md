@@ -121,7 +121,7 @@ data_to_share/
 ## Citation
 If you use this work or methodology, please cite as:
 ```plaintext
-@misc{chikersal2025parentpalai,
+@misc{chikersal2025pretendparentai,
 author = {Prerna Chikersal},
 title = {PretendParentAI – Instruction Fine-Tuning Mistral-7B on Reddit Parenting Data using QLoRA},
 year = {2025},
